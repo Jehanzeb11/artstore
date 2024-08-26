@@ -2,9 +2,6 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/common/Navbar";
 import Footer from "@/components/common/Footer";
-import 'aos/dist/aos.css';
-import AOSInit from "@/config/Aos";
-
 const inter = Roboto({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata = {
@@ -19,7 +16,6 @@ export default function RootLayout({ children }) {
       <Navbar />
         {children}
         <Footer />
-        <AOSInit/>
         </body>
     </html>
   );

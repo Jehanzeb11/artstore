@@ -21,7 +21,7 @@ const Navbar = () => {
 
 <Image src={logo} alt="logo" width={1000} height={1000} className="w-10 h-10 sm:hidden block" />
 
-    <div className="w-full flex justify-center items-center">
+    <div className="w-full flex justify-center items-center m-2">
       <nav className="sm:flex hidden p-3 bg-white justify-between items-center gap-6 rounded-xl backdrop-blur-xl bg-opacity-20 text-xl font-medium">
         <Image src={logo} alt="logo" width={1000} height={1000} className="w-10 h-10" />
         <ul className="flex gap-4">
@@ -34,7 +34,7 @@ const Navbar = () => {
     </div>
 
 
-    <button className="sm:hidden block p-2 rounded-full bg-white backdrop-blur-xl bg-opacity-20" onClick={() => setShow(true)}>
+    <button className="sm:hidden flex p-2 rounded-full bg-white backdrop-blur-xl bg-opacity-20 m-2" onClick={() => setShow(true)}>
             <RiMenu3Fill color="#13AFF0" size={28} />
           </button>
 

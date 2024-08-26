@@ -4,7 +4,7 @@ import React from 'react'
 import animationData from '../../animation/aboutAnim2.json'
 const About = () => {
   return (
-    <div className="text-white py-16 flex justify-center items-center px-4 w-full">
+    <div className="text-white py-16 flex justify-center items-center px-4 w-full overflow-x-hidden">
       <div className="max-w-screen-xl">
         <div className="sm:grid grid-cols-12 gap-8">
           <div className="md:col-span-6 col-span-12" data-aos="fade-right">
