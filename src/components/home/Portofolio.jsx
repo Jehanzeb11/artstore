@@ -165,7 +165,7 @@ const Portofolio = () => {
             {postofolios.map(({ id, img }) => (
   <div key={id} className="relative xl:col-span-2 lg:col-span-3 md:col-span-4 col-span-6 rounded group" data-aos="zoom-in">
     <Image src={img} alt="img-1" width={1000} height={1000} className="w-full h-full object-contain" />
-    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-black/50 to-black/0 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-black/70 to-black/0 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
       <div className="flex items-end justify-start sm:gap-2 sm:p-2 w-full h-full transform -translate-x-6 group-hover:translate-x-0 transition-transform duration-300 ease-in-out">
         <Image src={avatar} alt="img-1" width={1000} height={1000} className="w-14 h-14 object-contain" />
         <div className="text-white">
