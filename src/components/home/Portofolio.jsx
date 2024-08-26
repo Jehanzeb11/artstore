@@ -33,348 +33,152 @@ import img30 from "@/assets/img30.jpg"
 import avatar from "@/assets/avatar.png"
 
 const Portofolio = () => {
+
+
+
+    const postofolios = [
+        {
+            id: 1,
+            img: img1
+        },
+        {
+            id: 2,
+            img: img2
+        },
+        {
+            id: 3,
+            img: img3
+        },
+        {
+            id: 4,
+            img: img4
+        },
+        {
+            id: 5,
+            img: img5
+        },
+        {
+            id: 6,
+            img: img6
+        },
+        {
+            id: 7,
+            img: img7
+        },
+        {
+            id: 8,
+            img: img8
+        },
+        {
+            id: 9,
+            img: img9
+        },
+        {
+            id: 10,
+            img: img10
+        },
+        {
+            id: 11,
+            img: img11
+        },
+        {
+            id: 12,
+            img: img12
+        },
+        {
+            id: 13,
+            img: img13
+        },
+        {
+            id: 14,
+            img: img14
+        },
+        {
+            id: 15,
+            img: img15
+        },
+        {
+            id: 16,
+            img: img16
+        },
+        {
+            id: 17,
+            img: img17
+        },
+        {
+            id: 18,
+            img: img18
+        },
+        {
+            id: 19,
+            img: img19
+        },
+        {
+            id: 20,
+            img: img20
+        },
+        {
+            id: 21,
+            img: img21
+        }, {
+            id: 22,
+            img: img22
+        }, {
+            id: 23,
+            img: img23
+        }, {
+            id: 24,
+            img: img24
+        }, {
+            id: 25,
+            img: img25
+        }, {
+            id: 20,
+            img: img20
+        }, {
+            id: 26,
+            img: img26
+        }, {
+            id: 27,
+            img: img27
+        }, {
+            id: 28,
+            img: img28
+        },
+        {
+            id: 29,
+            img: img29
+        },
+        {
+            id: 30,
+            img: img30
+        },
+
+    ]
+
+
+
     return (
         <div className="text-white py-16 flex flex-col justify-center items-center sm:px-6 w-full">
-            <h1 className="text-5xl font-semibold text-white max-sm:mb-5 w-full">All Channels</h1>
+            <h1 className="text-5xl font-semibold text-white max-sm:px-4 mb-5 w-full">All Channels</h1>
             <div className="grid grid-cols-12 gap-1 w-full">
-                <div className="relative xl:col-span-2 lg:col-span-3 md:col-span-4 col-span-6 rounded group">
-                    <Image src={img1} alt="img-1" width={1000} height={1000} className="w-full h-full object-contain" />
-                    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-end justify-start sm:gap-2 m:p-2">
-
-                        <Image src={avatar} alt="img-1" width={1000} height={1000} className="w-14 h-14 object-contain" />
-                        <div className="text-white">
-                            <h4 className="sm:text-xl text-base font-semibold">Sample Image</h4>
-                            <p className="text-sm font-medium">John Doe</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="relative xl:col-span-2 lg:col-span-3 md:col-span-4 col-span-6 rounded group">
-                    <Image
-                        src={img2}
-                        alt="img-1"
-                        width={1000}
-                        height={1000}
-                        className="w-full h-full object-contain transition-all duration-300"
-                    />
-                    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-end justify-start sm:gap-2 m:p-2">
-
-                        <Image src={avatar} alt="img-1" width={1000} height={1000} className="w-14 h-14 object-contain" />
-                        <div className="text-white">
-                            <h4 className="sm:text-xl text-base font-semibold">Sample Image</h4>
-                            <p className="text-sm font-medium">John Doe</p>
-                        </div>
-                    </div>
-                </div>
+            {postofolios.map(({ id, img }) => (
+  <div key={id} className="relative xl:col-span-2 lg:col-span-3 md:col-span-4 col-span-6 rounded group" data-aos="zoom-in">
+    <Image src={img} alt="img-1" width={1000} height={1000} className="w-full h-full object-contain" />
+    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-black/50 to-black/0 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out">
+      <div className="flex items-end justify-start sm:gap-2 sm:p-2 w-full h-full transform -translate-x-6 group-hover:translate-x-0 transition-transform duration-300 ease-in-out">
+        <Image src={avatar} alt="img-1" width={1000} height={1000} className="w-14 h-14 object-contain" />
+        <div className="text-white">
+          <h4 className="sm:text-xl text-base font-semibold">Sample Image</h4>
+          <p className="text-sm font-medium">John Doe</p>
+        </div>
+      </div>
+    </div>
+  </div>
+))}
 
 
 
-                <div className="relative xl:col-span-2 lg:col-span-3 md:col-span-4 col-span-6 rounded group">
-                    <Image src={img3} alt="img-1" width={1000} height={1000} className="w-full h-full object-contain" />
-                    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-end justify-start sm:gap-2 m:p-2">
-
-                        <Image src={avatar} alt="img-1" width={1000} height={1000} className="w-14 h-14 object-contain" />
-                        <div className="text-white">
-                            <h4 className="sm:text-xl text-base font-semibold">Sample Image</h4>
-                            <p className="text-sm font-medium">John Doe</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="relative xl:col-span-2 lg:col-span-3 md:col-span-4 col-span-6 rounded group">
-                    <Image src={img4} alt="img-1" width={1000} height={1000} className="w-full h-full object-contain" />
-                    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-end justify-start sm:gap-2 m:p-2">
-
-                        <Image src={avatar} alt="img-1" width={1000} height={1000} className="w-14 h-14 object-contain" />
-                        <div className="text-white">
-                            <h4 className="sm:text-xl text-base font-semibold">Sample Image</h4>
-                            <p className="text-sm font-medium">John Doe</p>
-                        </div>
-                    </div>
-                </div><div className="relative xl:col-span-2 lg:col-span-3 md:col-span-4 col-span-6 rounded group">
-                    <Image src={img5} alt="img-1" width={1000} height={1000} className="w-full h-full object-contain" />
-                    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-end justify-start sm:gap-2 m:p-2">
-
-                        <Image src={avatar} alt="img-1" width={1000} height={1000} className="w-14 h-14 object-contain" />
-                        <div className="text-white">
-                            <h4 className="sm:text-xl text-base font-semibold">Sample Image</h4>
-                            <p className="text-sm font-medium">John Doe</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="relative xl:col-span-2 lg:col-span-3 md:col-span-4 col-span-6 rounded group">
-                    <Image src={img6} alt="img-1" width={1000} height={1000} className="w-full h-full object-contain" />
-                    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-end justify-start sm:gap-2 m:p-2">
-
-                        <Image src={avatar} alt="img-1" width={1000} height={1000} className="w-14 h-14 object-contain" />
-                        <div className="text-white">
-                            <h4 className="sm:text-xl text-base font-semibold">Sample Image</h4>
-                            <p className="text-sm font-medium">John Doe</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="relative xl:col-span-2 lg:col-span-3 md:col-span-4 col-span-6 rounded group">
-                    <Image src={img7} alt="img-1" width={1000} height={1000} className="w-full h-full object-contain" />
-                    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-end justify-start sm:gap-2 m:p-2">
-
-                        <Image src={avatar} alt="img-1" width={1000} height={1000} className="w-14 h-14 object-contain" />
-                        <div className="text-white">
-                            <h4 className="sm:text-xl text-base font-semibold">Sample Image</h4>
-                            <p className="text-sm font-medium">John Doe</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="relative xl:col-span-2 lg:col-span-3 md:col-span-4 col-span-6 rounded group">
-                    <Image src={img8} alt="img-1" width={1000} height={1000} className="w-full h-full object-contain" />
-                    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-end justify-start sm:gap-2 m:p-2">
-
-                        <Image src={avatar} alt="img-1" width={1000} height={1000} className="w-14 h-14 object-contain" />
-                        <div className="text-white">
-                            <h4 className="sm:text-xl text-base font-semibold">Sample Image</h4>
-                            <p className="text-sm font-medium">John Doe</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="relative xl:col-span-2 lg:col-span-3 md:col-span-4 col-span-6 rounded group">
-                    <Image src={img9} alt="img-1" width={1000} height={1000} className="w-full h-full object-contain" />
-                    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-end justify-start sm:gap-2 m:p-2">
-
-                        <Image src={avatar} alt="img-1" width={1000} height={1000} className="w-14 h-14 object-contain" />
-                        <div className="text-white">
-                            <h4 className="sm:text-xl text-base font-semibold">Sample Image</h4>
-                            <p className="text-sm font-medium">John Doe</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="relative xl:col-span-2 lg:col-span-3 md:col-span-4 col-span-6 rounded group">
-                    <Image src={img10} alt="img-1" width={1000} height={1000} className="w-full h-full object-contain" />
-                    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-end justify-start sm:gap-2 m:p-2">
-
-                        <Image src={avatar} alt="img-1" width={1000} height={1000} className="w-14 h-14 object-contain" />
-                        <div className="text-white">
-                            <h4 className="sm:text-xl text-base font-semibold">Sample Image</h4>
-                            <p className="text-sm font-medium">John Doe</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="relative xl:col-span-2 lg:col-span-3 md:col-span-4 col-span-6 rounded group">
-                    <Image src={img11} alt="img-1" width={1000} height={1000} className="w-full h-full object-contain" />
-                    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-end justify-start sm:gap-2 m:p-2">
-
-                        <Image src={avatar} alt="img-1" width={1000} height={1000} className="w-14 h-14 object-contain" />
-                        <div className="text-white">
-                            <h4 className="sm:text-xl text-base font-semibold">Sample Image</h4>
-                            <p className="text-sm font-medium">John Doe</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="relative xl:col-span-2 lg:col-span-3 md:col-span-4 col-span-6 rounded group">
-                    <Image src={img12} alt="img-1" width={1000} height={1000} className="w-full h-full object-contain" />
-                    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-end justify-start sm:gap-2 m:p-2">
-
-                        <Image src={avatar} alt="img-1" width={1000} height={1000} className="w-14 h-14 object-contain" />
-                        <div className="text-white">
-                            <h4 className="sm:text-xl text-base font-semibold">Sample Image</h4>
-                            <p className="text-sm font-medium">John Doe</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="relative xl:col-span-2 lg:col-span-3 md:col-span-4 col-span-6 rounded group">
-                    <Image src={img13} alt="img-1" width={1000} height={1000} className="w-full h-full object-contain" />
-                    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-end justify-start sm:gap-2 m:p-2">
-
-                        <Image src={avatar} alt="img-1" width={1000} height={1000} className="w-14 h-14 object-contain" />
-                        <div className="text-white">
-                            <h4 className="sm:text-xl text-base font-semibold">Sample Image</h4>
-                            <p className="text-sm font-medium">John Doe</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="relative xl:col-span-2 lg:col-span-3 md:col-span-4 col-span-6 rounded group">
-                    <Image src={img14} alt="img-1" width={1000} height={1000} className="w-full h-full object-contain" />
-                    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-end justify-start sm:gap-2 m:p-2">
-
-                        <Image src={avatar} alt="img-1" width={1000} height={1000} className="w-14 h-14 object-contain" />
-                        <div className="text-white">
-                            <h4 className="sm:text-xl text-base font-semibold">Sample Image</h4>
-                            <p className="text-sm font-medium">John Doe</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="relative xl:col-span-2 lg:col-span-3 md:col-span-4 col-span-6 rounded group">
-                    <Image src={img15} alt="img-1" width={1000} height={1000} className="w-full h-full object-contain" />
-                    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-end justify-start sm:gap-2 m:p-2">
-
-                        <Image src={avatar} alt="img-1" width={1000} height={1000} className="w-14 h-14 object-contain" />
-                        <div className="text-white">
-                            <h4 className="sm:text-xl text-base font-semibold">Sample Image</h4>
-                            <p className="text-sm font-medium">John Doe</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="relative xl:col-span-2 lg:col-span-3 md:col-span-4 col-span-6 rounded group">
-                    <Image src={img16} alt="img-1" width={1000} height={1000} className="w-full h-full object-contain" />
-                    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-end justify-start sm:gap-2 m:p-2">
-
-                        <Image src={avatar} alt="img-1" width={1000} height={1000} className="w-14 h-14 object-contain" />
-                        <div className="text-white">
-                            <h4 className="sm:text-xl text-base font-semibold">Sample Image</h4>
-                            <p className="text-sm font-medium">John Doe</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="relative xl:col-span-2 lg:col-span-3 md:col-span-4 col-span-6 rounded group">
-                    <Image src={img17} alt="img-1" width={1000} height={1000} className="w-full h-full object-contain" />
-                    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-end justify-start sm:gap-2 m:p-2">
-
-                        <Image src={avatar} alt="img-1" width={1000} height={1000} className="w-14 h-14 object-contain" />
-                        <div className="text-white">
-                            <h4 className="sm:text-xl text-base font-semibold">Sample Image</h4>
-                            <p className="text-sm font-medium">John Doe</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="relative xl:col-span-2 lg:col-span-3 md:col-span-4 col-span-6 rounded group">
-                    <Image src={img18} alt="img-1" width={1000} height={1000} className="w-full h-full object-contain" />
-                    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-end justify-start sm:gap-2 m:p-2">
-
-                        <Image src={avatar} alt="img-1" width={1000} height={1000} className="w-14 h-14 object-contain" />
-                        <div className="text-white">
-                            <h4 className="sm:text-xl text-base font-semibold">Sample Image</h4>
-                            <p className="text-sm font-medium">John Doe</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="relative xl:col-span-2 lg:col-span-3 md:col-span-4 col-span-6 rounded group">
-                    <Image src={img19} alt="img-1" width={1000} height={1000} className="w-full h-full object-contain" />
-                    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-end justify-start sm:gap-2 m:p-2">
-
-                        <Image src={avatar} alt="img-1" width={1000} height={1000} className="w-14 h-14 object-contain" />
-                        <div className="text-white">
-                            <h4 className="sm:text-xl text-base font-semibold">Sample Image</h4>
-                            <p className="text-sm font-medium">John Doe</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="relative xl:col-span-2 lg:col-span-3 md:col-span-4 col-span-6 rounded group">
-                    <Image src={img20} alt="img-1" width={1000} height={1000} className="w-full h-full object-contain" />
-                    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-end justify-start sm:gap-2 m:p-2">
-
-                        <Image src={avatar} alt="img-1" width={1000} height={1000} className="w-14 h-14 object-contain" />
-                        <div className="text-white">
-                            <h4 className="sm:text-xl text-base font-semibold">Sample Image</h4>
-                            <p className="text-sm font-medium">John Doe</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="relative xl:col-span-2 lg:col-span-3 md:col-span-4 col-span-6 rounded group">
-                    <Image src={img21} alt="img-1" width={1000} height={1000} className="w-full h-full object-contain" />
-                    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-end justify-start sm:gap-2 m:p-2">
-
-                        <Image src={avatar} alt="img-1" width={1000} height={1000} className="w-14 h-14 object-contain" />
-                        <div className="text-white">
-                            <h4 className="sm:text-xl text-base font-semibold">Sample Image</h4>
-                            <p className="text-sm font-medium">John Doe</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="relative xl:col-span-2 lg:col-span-3 md:col-span-4 col-span-6 rounded group">
-                    <Image src={img22} alt="img-1" width={1000} height={1000} className="w-full h-full object-contain" />
-                    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-end justify-start sm:gap-2 m:p-2">
-
-                        <Image src={avatar} alt="img-1" width={1000} height={1000} className="w-14 h-14 object-contain" />
-                        <div className="text-white">
-                            <h4 className="sm:text-xl text-base font-semibold">Sample Image</h4>
-                            <p className="text-sm font-medium">John Doe</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="relative xl:col-span-2 lg:col-span-3 md:col-span-4 col-span-6 rounded group">
-                    <Image src={img23} alt="img-1" width={1000} height={1000} className="w-full h-full object-contain" />
-                    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-end justify-start sm:gap-2 m:p-2">
-
-                        <Image src={avatar} alt="img-1" width={1000} height={1000} className="w-14 h-14 object-contain" />
-                        <div className="text-white">
-                            <h4 className="sm:text-xl text-base font-semibold">Sample Image</h4>
-                            <p className="text-sm font-medium">John Doe</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="relative xl:col-span-2 lg:col-span-3 md:col-span-4 col-span-6 rounded group">
-                    <Image src={img24} alt="img-1" width={1000} height={1000} className="w-full h-full object-contain" />
-                    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-end justify-start sm:gap-2 m:p-2">
-
-                        <Image src={avatar} alt="img-1" width={1000} height={1000} className="w-14 h-14 object-contain" />
-                        <div className="text-white">
-                            <h4 className="sm:text-xl text-base font-semibold">Sample Image</h4>
-                            <p className="text-sm font-medium">John Doe</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="relative xl:col-span-2 lg:col-span-3 md:col-span-4 col-span-6 rounded group">
-                    <Image src={img25} alt="img-1" width={1000} height={1000} className="w-full h-full object-contain" />
-                    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-end justify-start sm:gap-2 m:p-2">
-
-                        <Image src={avatar} alt="img-1" width={1000} height={1000} className="w-14 h-14 object-contain" />
-                        <div className="text-white">
-                            <h4 className="sm:text-xl text-base font-semibold">Sample Image</h4>
-                            <p className="text-sm font-medium">John Doe</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="relative xl:col-span-2 lg:col-span-3 md:col-span-4 col-span-6 rounded group">
-                    <Image src={img26} alt="img-1" width={1000} height={1000} className="w-full h-full object-contain" />
-                    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-end justify-start sm:gap-2 m:p-2">
-
-                        <Image src={avatar} alt="img-1" width={1000} height={1000} className="w-14 h-14 object-contain" />
-                        <div className="text-white">
-                            <h4 className="sm:text-xl text-base font-semibold">Sample Image</h4>
-                            <p className="text-sm font-medium">John Doe</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="relative xl:col-span-2 lg:col-span-3 md:col-span-4 col-span-6 rounded group">
-                    <Image src={img27} alt="img-1" width={1000} height={1000} className="w-full h-full object-contain" />
-                    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-end justify-start sm:gap-2 m:p-2">
-
-                        <Image src={avatar} alt="img-1" width={1000} height={1000} className="w-14 h-14 object-contain" />
-                        <div className="text-white">
-                            <h4 className="sm:text-xl text-base font-semibold">Sample Image</h4>
-                            <p className="text-sm font-medium">John Doe</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="relative xl:col-span-2 lg:col-span-3 md:col-span-4 col-span-6 rounded group">
-                    <Image src={img28} alt="img-1" width={1000} height={1000} className="w-full h-full object-contain" />
-                    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-end justify-start sm:gap-2 m:p-2">
-
-                        <Image src={avatar} alt="img-1" width={1000} height={1000} className="w-14 h-14 object-contain" />
-                        <div className="text-white">
-                            <h4 className="sm:text-xl text-base font-semibold">Sample Image</h4>
-                            <p className="text-sm font-medium">John Doe</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="relative xl:col-span-2 lg:col-span-3 md:col-span-4 col-span-6 rounded group">
-                    <Image src={img29} alt="img-1" width={1000} height={1000} className="w-full h-full object-contain" />
-                    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-end justify-start sm:gap-2 m:p-2">
-
-                        <Image src={avatar} alt="img-1" width={1000} height={1000} className="w-14 h-14 object-contain" />
-                        <div className="text-white">
-                            <h4 className="sm:text-xl text-base font-semibold">Sample Image</h4>
-                            <p className="text-sm font-medium">John Doe</p>
-                        </div>
-                    </div>
-                </div>
-                <div className="relative xl:col-span-2 lg:col-span-3 md:col-span-4 col-span-6 rounded group">
-                    <Image src={img30} alt="img-1" width={1000} height={1000} className="w-full h-full object-contain" />
-                    <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-t from-black/50 via-transparent to-transparent z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out flex items-end justify-start sm:gap-2 m:p-2">
-
-                        <Image src={avatar} alt="img-1" width={1000} height={1000} className="w-14 h-14 object-contain" />
-                        <div className="text-white">
-                            <h4 className="sm:text-xl text-base font-semibold">Sample Image</h4>
-                            <p className="text-sm font-medium">John Doe</p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     )

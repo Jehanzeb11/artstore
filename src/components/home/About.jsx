@@ -7,7 +7,7 @@ const About = () => {
     <div className="text-white py-16 flex justify-center items-center px-4 w-full">
       <div className="max-w-screen-xl">
         <div className="sm:grid grid-cols-12 gap-8">
-          <div className="md:col-span-6 col-span-12">
+          <div className="md:col-span-6 col-span-12" data-aos="fade-right">
             <div className="w-full">
               <Lottie
                 loop={true}
@@ -21,7 +21,7 @@ const About = () => {
               />
             </div>
           </div>
-          <div className="md:col-span-6 col-span-10 flex flex-col justify-center items-start sm:gap-6">
+          <div className="md:col-span-6 col-span-10 flex flex-col justify-center items-start sm:gap-6" data-aos="fade-left">
             <div className="text-5xl font-semibold text-primary max-sm:mb-5">
               About Us
             </div>
